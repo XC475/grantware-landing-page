@@ -15,7 +15,7 @@ const LOGOS = [
   "spark.png",
 ]
 
-function LogoItem({ logo, index }: { logo: string; index: number }) {
+function LogoItem({ logo }: { logo: string }) {
   const logoName = logo.replace(/\.(png|svg)$/, "")
   const logoLabel = logoName
     .split(/[-_]/)
@@ -82,7 +82,7 @@ export function ClientLogos() {
           {/* Single container with doubled logos */}
           <div className="scroll-animation">
             {doubledLogos.map((logo, index) => (
-              <LogoItem key={`logo-${index}`} logo={logo} index={index} />
+              <LogoItem key={`logo-${index}`} logo={logo} />
             ))}
           </div>
         </div>

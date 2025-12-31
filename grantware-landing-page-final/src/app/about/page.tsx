@@ -2,7 +2,6 @@
 
 import { useState } from "react"
 import Image from "next/image"
-import Link from "next/link"
 import { motion } from "framer-motion"
 import { ExternalLink, ChevronDown, ChevronUp } from "lucide-react"
 import { HeaderPill } from "@/components/header-pill"
@@ -177,7 +176,7 @@ export default function AboutPage() {
             className="text-lg md:text-xl text-gray-600 leading-relaxed mb-6"
           >
             At GrantWare AI, we believe every organization deserves access to the funding that can transform their mission. 
-            We're building intelligent tools that eliminate the complexity of grant discovery, application, and management—so 
+            We&apos;re building intelligent tools that eliminate the complexity of grant discovery, application, and management—so 
             teams can focus on what matters most: making an impact.
           </motion.p>
           <motion.p
@@ -186,7 +185,7 @@ export default function AboutPage() {
             transition={{ duration: 0.6, delay: 0.5 }}
             className="text-base md:text-lg text-gray-500 leading-relaxed"
           >
-            Built for teams that can't afford to miss funding windows.
+            Built for teams that can&apos;t afford to miss funding windows.
           </motion.p>
         </div>
       </section>

@@ -43,16 +43,17 @@ export function HeaderPill() {
         <div className="relative mx-auto max-w-[700px] w-full">
           <div className="flex items-center justify-between px-4 py-2 backdrop-blur-md border rounded-full shadow-[0px_0px_0px_2px_rgba(255,255,255,0.1)] bg-gray-100/90 border-gray-200">
             {/* Left: Logo - scrolls to top */}
-            <a
+            <Link
               href="/"
               onClick={handleScrollToTop}
+              scroll={false}
               className="flex items-center gap-1 cursor-pointer"
             >
               <span className="font-serif text-lg font-medium text-gray-900">
                 GrantWare{" "}
                 <span className="text-gray-600">AI</span>
               </span>
-            </a>
+            </Link>
 
             {/* Center: Nav links (desktop only) */}
             <nav className="hidden md:flex items-center gap-4">

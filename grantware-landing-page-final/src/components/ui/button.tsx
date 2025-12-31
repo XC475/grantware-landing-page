@@ -64,7 +64,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       supportIcon = undefined,
       leadingIcon = undefined,
       isLoading = false,
-      asChild = false,
+      asChild: _,
       ...props
     },
     ref
@@ -87,7 +87,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 )
 Button.displayName = "Button"
 
-export interface ButtonGroupProps extends React.HTMLAttributes<HTMLDivElement> {}
+export type ButtonGroupProps = React.HTMLAttributes<HTMLDivElement>
 
 export const ButtonGroup = React.forwardRef<HTMLDivElement, ButtonGroupProps>(({ className, ...props }, ref) => {
   return (

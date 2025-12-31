@@ -4,9 +4,8 @@ import { forwardRef, useRef } from "react"
 import { cn } from "@/lib/utils"
 import { AnimatedBeam } from "@/components/ui/animated-beam"
 
-// Animation timing constants (total cycle = 12 seconds)
+// Animation timing constants
 const BEAM_DURATION = 2.5
-const CYCLE_DURATION = 12
 
 const Circle = forwardRef<
   HTMLDivElement,

@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 import { ArrowLeft } from "lucide-react"
 import { HeaderPill } from "@/components/header-pill"
 import { FooterSection } from "@/components/footer-section"
-import { BLOG_POSTS, type BlogPost } from "../page"
+import { BLOG_POSTS, type BlogPost } from "../data"
 
 // Helper function to render content with proper formatting
 function renderContent(content: string) {
