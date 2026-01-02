@@ -77,6 +77,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.grantware.ai",
   },
+  verification: {
+    google: "5yQFhcQY_wjva3ZJkFo6gTqZiZPszpaMIVT1tTN7EI4",
+  },
   icons: {
     icon: [
       { url: "/favicon.svg", type: "image/svg+xml" },
