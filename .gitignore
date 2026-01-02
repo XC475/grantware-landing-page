@@ -1,0 +1,17 @@
+# Development/template folders (not part of production)
+brillance-saa-s-landing-page/
+landing-page/
+spark-agency-landing-portfolio/
+
+# Local files
+.DS_Store
+*.JPEG
+*.jpeg
+*.JPG
+*.jpg
+IMPLEMENTATION_PLAN.md
+.cursor/
+
+# Node modules (in case any exist at root)
+node_modules/
+
