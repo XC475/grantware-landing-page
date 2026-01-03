@@ -41,7 +41,7 @@ export function HeaderPill() {
       <div className="container mx-auto max-w-7xl px-6 py-4">
         {/* The pill navbar */}
         <div className="relative mx-auto max-w-[700px] w-full">
-          <div className="flex items-center justify-between px-4 py-2 backdrop-blur-md border rounded-full shadow-[0px_0px_0px_2px_rgba(255,255,255,0.1)] bg-gray-100/90 border-gray-200">
+          <div className="flex items-center justify-between px-4 py-2 backdrop-blur-xl border rounded-full shadow-lg shadow-black/5 bg-white/30 border-white/30">
             {/* Left: Logo - scrolls to top */}
             <Link
               href="/"
@@ -91,6 +91,12 @@ export function HeaderPill() {
                 className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
               >
                 About
+              </Link>
+              <Link
+                href="/blog"
+                className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
+              >
+                Blog
               </Link>
             </nav>
 
