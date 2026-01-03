@@ -62,8 +62,24 @@ export function Hero() {
   }
 
   return (
-    <section id="hero" className="relative pt-32 pb-16 px-6 min-h-[90vh]">
-      {/* Hero Content - sits above gradient (gradient is in parent wrapper) */}
+    <section id="hero" className="relative pt-32 pb-16 px-6 min-h-[90vh] overflow-hidden">
+      {/* Light Sky Blue Glow Background */}
+      <div 
+        className="absolute inset-0 z-0 pointer-events-none" 
+        style={{
+          backgroundImage: `radial-gradient(circle at center, #93c5fd, transparent)`,
+        }} 
+      />
+      
+      {/* Bottom fade to white for smooth transition to next section */}
+      <div 
+        className="absolute inset-x-0 bottom-0 h-48 z-[1] pointer-events-none" 
+        style={{
+          backgroundImage: `linear-gradient(to bottom, transparent, white)`,
+        }} 
+      />
+      
+      {/* Hero Content - sits above gradient */}
       <div className="relative z-10 container mx-auto max-w-7xl">
         <div className="grid gap-10 lg:grid-cols-[55%_45%] items-center">
           {/* Left Column: Content */}
