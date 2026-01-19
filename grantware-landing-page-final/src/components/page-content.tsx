@@ -7,7 +7,7 @@ import { Hero } from "@/components/hero"
 import { ProductFeaturesSection } from "@/components/product-features-section"
 import { ClientLogos } from "@/components/client-logos"
 import { ApproachSection } from "@/components/approach-section"
-// import { PricingSection } from "@/components/pricing-section"
+import { PricingSection } from "@/components/pricing-section"
 import { FAQSection } from "@/components/faq-section"
 import { FooterSection } from "@/components/footer-section"
 
@@ -88,8 +88,8 @@ function PageContentInner() {
           ]}
         />
 
-        {/* Section 6: Pricing - COMMENTED OUT - To re-enable, uncomment below */}
-        {/* <PricingSection /> */}
+        {/* Section 6: Pricing */}
+        <PricingSection />
 
         {/* Section 7: FAQ */}
         <FAQSection />

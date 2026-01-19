@@ -118,14 +118,18 @@ export function Hero() {
               transition={{ duration: 0.6, delay: 0.6 }}
               className="flex flex-col sm:flex-row items-center lg:items-start gap-4 w-full sm:w-auto"
             >
-              <ShimmerButton size="lg" className="rounded-xl h-12 px-9 text-[17px] w-full sm:w-auto" asChild>
+              <ShimmerButton 
+                size="lg" 
+                className="rounded-xl h-12 px-9 text-[17px] w-full sm:w-auto"
+                asChild
+              >
                 <a
-                  href="https://cal.com/team/grantware-ai/grantware-ai-demo-chat?overlayCalendar=true"
+                  href="https://grantware-ai.vercel.app/signup?step=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackEvent("book_demo_click", { location: "hero", label: "Book a 15-min demo" })}
+                  onClick={() => trackEvent("get_started_click", { location: "hero", label: "Get Started" })}
                 >
-                  Book a 15-min demo
+                  Get Started
                 </a>
               </ShimmerButton>
 

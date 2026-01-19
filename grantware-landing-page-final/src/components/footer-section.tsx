@@ -86,14 +86,13 @@ export function FooterSection() {
               >
                 Workflow
               </a>
-              {/* Pricing - COMMENTED OUT - To re-enable, uncomment below */}
-              {/* <a 
+              <a 
                 href="#pricing" 
                 onClick={(e) => handleSmoothScroll(e, "pricing")}
                 className="text-gray-700 text-sm font-normal leading-5 hover:text-[#5b8cff] transition-colors cursor-pointer"
               >
                 Pricing
-              </a> */}
+              </a>
               <a 
                 href="#faq" 
                 onClick={(e) => handleSmoothScroll(e, "faq")}
@@ -126,6 +125,15 @@ export function FooterSection() {
                 onClick={() => trackEvent("mailto_click", { location: "footer_nav", label: "Contact" })}
               >
                 Contact
+              </a>
+              <a 
+                href="https://cal.com/team/grantware-ai/grantware-ai-demo-chat?overlayCalendar=true"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-gray-700 text-sm font-normal leading-5 hover:text-[#5b8cff] transition-colors cursor-pointer"
+                onClick={() => trackEvent("book_call_click", { location: "footer_nav", label: "Book a Call" })}
+              >
+                Book a Call
               </a>
             </div>
           </div>

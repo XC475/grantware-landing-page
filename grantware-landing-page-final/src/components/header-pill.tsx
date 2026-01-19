@@ -71,14 +71,13 @@ export function HeaderPill() {
               >
                 Process
               </a>
-              {/* Pricing - COMMENTED OUT - To re-enable, uncomment below */}
-              {/* <a
+              <a
                 href="#pricing"
                 onClick={(e) => handleSmoothScroll(e, "pricing")}
                 className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors cursor-pointer"
               >
                 Pricing
-              </a> */}
+              </a>
               <a
                 href="#faq"
                 onClick={(e) => handleSmoothScroll(e, "faq")}
@@ -111,27 +110,18 @@ export function HeaderPill() {
                 {isGradient ? "☀️ Light" : "🌈 Gradient"}
               </button> */}
 
-              {/* Get Started - COMMENTED OUT - To re-enable, uncomment below */}
-              {/* <ShimmerButton 
-                size="sm" 
-                className="rounded-xl px-5 text-sm"
-                onClick={() => trackEvent("get_started_click", { location: "navbar", label: "Get Started" })}
-              >
-                Get Started
-              </ShimmerButton> */}
-
               <ShimmerButton 
                 size="sm" 
                 className="rounded-xl px-5 text-sm"
                 asChild
               >
                 <a
-                  href="https://cal.com/team/grantware-ai/grantware-ai-demo-chat?overlayCalendar=true"
+                  href="https://grantware-ai.vercel.app/signup?step=1"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={() => trackEvent("book_call_click", { location: "navbar", label: "Book a call" })}
+                  onClick={() => trackEvent("get_started_click", { location: "navbar", label: "Get Started" })}
                 >
-                  Book a call
+                  Get Started
                 </a>
               </ShimmerButton>
             </div>
